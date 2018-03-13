@@ -1,8 +1,18 @@
 $(document).ready(function() {
+
   $.ajaxSetup({cache: false});
-  $('.work--item').click(function() {
-    $('.works--inner').css('margin-left', '-100%');
-    $('.work--description').show();
+
+  var thumbItem = $('.work--item'),
+      worksBelt = $('.works--inner'),
+      workDescription = $('.work--description'),
+      descriptionOffset = $('.works--container').offset().top;
+  thumbItem.click(function() {
+    console.log(descriptionOffset);
+    $('html, body').animate({
+                      scrollTop: descriptionOffset - 100
+                    }, 1000);
+    worksBelt.css('margin-left', '-100%');
+    workDescription.show();
     var folder = $(this).data('folder'),
         title = $(this).data('title'),
         html = 'include/works/' + folder + '.html',
@@ -11,7 +21,10 @@ $(document).ready(function() {
     $('.description--main').html(loader).load(html);
   });
   $('#worksBack').click(function() {
-    $('.works--inner').css('margin-left', 0);
-    $('.work--description').hide(800);
+    worksBelt.css('margin-left', 0);
+    workDescription.hide(400);
   });
+
+
+
 });
