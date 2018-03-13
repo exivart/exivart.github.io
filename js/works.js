@@ -13,6 +13,6 @@ $(document).ready(function() {
   });
   $('#worksBack').click(function() {
     $('.works--inner').css('margin-left', 0);
-    $('.work--description').hide(800);
+    $('.work--description').hide(300);
   });
 });
