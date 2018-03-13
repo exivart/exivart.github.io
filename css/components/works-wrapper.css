@@ -1,0 +1,178 @@
+.works--container {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+  .works--inner {
+    width: 200%;
+    margin-left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: ease-in-out .5s;
+    z-index: 2;
+  }
+
+    .works--wrapper {
+      width: 50%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+      .work--item {
+        width: 32%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        perspective: 1000px;
+        cursor: pointer;
+      }
+
+        .work--title {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 30px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0,0,0,.5);
+          transform: rotateX(100deg);
+          transform-origin: center bottom;
+          transition: linear .3s;
+        }
+
+          .work--item:hover .work--title {
+            transform: rotateX(0deg);
+            left: 0;
+          }
+
+        .work--item:nth-child(1) {
+          background-image: url('../../images/works/work-1/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .work--item:nth-child(2) {
+          background-image: url('../../images/works/work-2/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .work--item:nth-child(3) {
+          background-image: url('../../images/works/work-3/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .work--item:nth-child(4) {
+          background-image: url('../../images/works/work-4/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .work--item:nth-child(5) {
+          background-image: url('../../images/works/work-5/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .work--item:nth-child(6) {
+          background-image: url('../../images/works/work-6/work-image.jpg');
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+    .work--description {
+      width: 50%;
+      display: none;
+    }
+
+      .work--load {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .description--main {
+        width: 100%;
+      }
+
+        .description--top {
+          width: 100%;
+          padding: 40px 0;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+        }
+
+          .works--back {
+            width: 60px;
+            cursor: pointer;
+          }
+
+            .works--back img {
+              width: 100%;
+            }
+
+          .project--title h1 {
+            font-size: 40px;
+            margin-left: 50px;
+          }
+
+        .project--hero-image img {
+          width: 100%;
+        }
+
+        .project--description p {
+          font-size: 20px;
+          line-height: 1.4;
+          padding: 30px;
+          text-indent: 1em;
+        }
+
+        .image--item {
+          margin: 20px 0;
+        }
+
+          .image--item img {
+            width: 100%;
+          }
+
+@media screen and (max-width: 1024px) {
+  .work--load {
+    width: 100%;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .work--item {
+      width: 45%;
+    }
+  }
+
+    @media screen and (max-width: 600px) {
+      .work--item {
+        width: 95%;
+      }
+    }
+
+      @media screen and (max-width: 425px) {
+        .works--back {
+          width: 40px;
+        }
+
+        .project--title h1 {
+          font-size: 30px;
+          margin-left: 20px;
+        }
+      }

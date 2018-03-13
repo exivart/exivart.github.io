@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+		<title>Interiori - Мебель на заказ</title>
+		<link rel="stylesheet" href="css/vendor/reset.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/vendor/fonts.css">
+		<link rel="stylesheet" href="css/vendor/owl/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/components/header.css">
+		<link rel="stylesheet" href="css/components/modal.css">
+		<link rel="stylesheet" href="css/components/menu.css">
+		<link rel="stylesheet" href="css/components/hero-slider.css">
+		<link rel="stylesheet" href="css/components/section.css">
+		<link rel="stylesheet" href="css/components/catalog-wrapper.css">
+		<link rel="stylesheet" href="css/components/section-about.css">
+		<link rel="stylesheet" href="css/components/parallax.css">
+		<link rel="stylesheet" href="css/components/works-wrapper.css">
+		<link rel="stylesheet" href="css/components/loader.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="header__wide">
+				<div class="block--logo">
+					<a href="#">Interiori</a>
+					<span>Качетсвенная мебель на заказ</span>
+				</div>
+				<div class="block--navigation">
+					<ul class="nav--list">
+						<li class="nav--item"><a href="#">Главная</a></li>
+						<li class="nav--item">
+							<a href="#">Каталог</a>
+							<ul class="nav--sublist">
+								<li class="nav--subitem"><a href="#">Прихожая</a></li>
+								<li class="nav--subitem"><a href="#">Гостиная</a></li>
+								<li class="nav--subitem"><a href="#">Детская</a></li>
+								<li class="nav--subitem"><a href="#">Спальня</a></li>
+								<li class="nav--subitem"><a href="#">Кухня</a></li>
+								<li class="nav--subitem"><a href="#">Офис</a></li>
+							</ul>
+						</li>
+						<li class="nav--item"><a href="#">О нас</a></li>
+						<li class="nav--item"><a href="#">Работы</a></li>
+						<li class="nav--item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="block--requestcall">
+					<a class="modal-trigger">Заказать звонок</a>
+				</div>
+			</div>
+			<div class="header__mobile">
+				<div class="menu--trigger">
+					<div class="menu--icon">
+						<img src="images/icons/menu.svg">
+					</div>
+				</div>
+				<div class="block--requestcall">
+					<a class="modal-trigger">Заказать звонок</a>
+				</div>
+				<div class="requestcall--trigger">
+					<div class="phone--icon modal-trigger">
+						<img src="images/icons/phone.svg">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="modal--overlay"></section>
+
+		<div class="block--modal" id="requestcall-modal">
+			<div class="modal--title">
+				Заполните форму
+			</div>
+			<div class="modal--description">
+				И наши менеджеры с Вами свяжутся
+			</div>
+			<div class="modal--form">
+				<form class="form--requestcall" action="" method="post">
+					<fieldset>
+						<input class="modal--input" type="text" name="" value="" placeholder="Имя*" required>
+					</fieldset>
+					<fieldset>
+						<input class="modal--input" type="text" name="" value="" placeholder="Телефон*" required>
+					</fieldset>
+					<p>Время звонка:</p>
+					<fieldset>
+						<select class="modal--input" name="" required>
+							<option value="0" disabled selected>Выберите время..</option>
+							<option value="1">В течение часа</option>
+							<option value="2">В течение дня</option>
+							<option value="3">Указать в комментарии</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<textarea class="modal--input" name="name" placeholder="Комментарий"></textarea>
+					</fieldset>
+					<fieldset>
+						<button class="modal--submit" type="submit" name="button">Отправить</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+
+			<div class="menu--block" id="menu">
+				<div class="menu--top">
+					<div class="menu--title">
+						Interiori
+					</div>
+					<div class="menu--close">
+						<img src="images/icons/left-arrow.svg" alt="">
+					</div>
+				</div>
+				<div class="menu--wrapper">
+					<ul class="menu--list">
+						<li><a href="#">Главная</a> </li>
+						<li id="submenu-trigger">
+							<a>Каталог</a> <span class="submenu--direction"><img src="images/icons/down-arrow.svg" alt=""> </span>
+							<ul class="menu--sublist">
+								<li class=""><a href="#">Прихожая</a></li>
+								<li class=""><a href="#">Гостиная</a></li>
+								<li class=""><a href="#">Детская</a></li>
+								<li class=""><a href="#">Спальня</a></li>
+								<li class=""><a href="#">Кухня</a></li>
+								<li class=""><a href="#">Офис</a></li>
+							</ul>
+						</li>
+						<li><a href="#">О нас</a> </li>
+						<li><a href="#">Работы</a> </li>
+						<li><a href="#">Контакты</a> </li>
+					</ul>
+				</div>
+			</div>
+
+
+		<section class="hero--slider">
+			<div class="owl-carousel" id="hero-slider">
+			  <div class="item">
+					<div class="slide-overlay"></div>
+					<div class="slide--description">
+						<h1>Создаем уникальную мебель</h1>
+						<p>Из массива ценных пород дерева</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide-overlay"></div>
+					<div class="slide--description">
+						<h1>Создаем уникальную мебель</h1>
+						<p>Из массива ценных пород дерева</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide-overlay"></div>
+					<div class="slide--description">
+						<h1>Создаем уникальную мебель</h1>
+						<p>Из массива ценных пород дерева</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="section--header">
+				Наш Каталог
+			</div>
+			<div class="catalog--wrapper">
+
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/prihojaya.jpg'); background-size: cover; background-position: center center;">
+								<span>Прихожая</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/prihojaya.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Прихожая</h1>
+								<ul class="catalog-back--list">
+									<li>Модульные прихожие</li>
+									<li>Настенные вешалки</li>
+									<li>Шкафы с зеркалами</li>
+									<li>Тумбы для обуви</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/gostinaya.jpg'); background-size: cover; background-position: center center;">
+								<span>Гостиная</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/gostinaya.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Гостиная</h1>
+								<ul class="catalog-back--list">
+									<li>Модульные гостиные</li>
+									<li>Стенки</li>
+									<li>Витрины</li>
+									<li>Столики</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/detskaya.jpg'); background-size: cover; background-position: center center;">
+								<span>Детская</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/detskaya.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Детская</h1>
+								<ul class="catalog-back--list">
+									<li>Модульные детские</li>
+									<li>Детские кровати</li>
+									<li>Письменные столы</li>
+									<li>Комоды</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/spalnya.jpg'); background-size: cover; background-position: center center;">
+								<span>Спальня</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/spalnya.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Спальня</h1>
+								<ul class="catalog-back--list">
+									<li>Спальные гарнитуры</li>
+									<li>Двухспальные кровати</li>
+									<li>Шкафы-купе</li>
+									<li>Тумбочки</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/kuhnya.jpg'); background-size: cover; background-position: center center;">
+								<span>Кухня</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/kuhnya.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Кухня</h1>
+								<ul class="catalog-back--list">
+									<li>Кухонные гарнитуры</li>
+									<li>Обеденные столы</li>
+									<li>Столешницы</li>
+									<li>Табуреты</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog--item">
+						<div class="item--inner">
+							<div class="front" style="background-image: url('images/catalog/ofis.jpg'); background-size: cover; background-position: center center;">
+								<span>Офис</span>
+							</div>
+							<div class="back" style="background-image: url('images/catalog/ofis.jpg'); background-size: cover; background-position: center center;">
+								<div class="catalog--overlay"></div>
+								<h1>Офис</h1>
+								<ul class="catalog-back--list">
+									<li>Модульные системы</li>
+									<li>Офисные столы</li>
+									<li>Офисные шкафы</li>
+									<li>Стеллажи</li>
+								</ul>
+								<div class="catalog--link">
+									<a href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="section section--about">
+			<div class="section--header">
+				О Нас
+			</div>
+			<div class="about--block">
+				<div class="about--column">
+					<div class="quote quote--open">
+						<img src="images/icons/quote.svg" alt="">
+					</div>
+					<div class="about--text">
+						<p>Мы не верим в идеальные дома. Мы верим в дома, которые являются идеальным отражением людей,
+							которые там живут. Там, где все выглядит так, как вы этого хотите, работает так, как вам нужно,
+							и, как правило, вы чувствуете себя хорошо - без затрат на состояние.</p>
+						<p>Вот почему мы заполнили этот раздел множеством различных домашних идей,
+							организовали подсказки и вдохновение для того, чтобы сделать ваш дом больше вас.</p>
+					</div>
+					<div class="quote quote--close">
+						<img src="images/icons/quote.svg" alt="">
+					</div>
+				</div>
+				<div class="about--column">
+					<div class="features--item">
+						<div class="feature--icon">
+							<img src="images/icons/design.svg" alt="">
+						</div>
+						<div class="feature--description">
+							<h1>Эксклюзивный дизайн</h1>
+							<p>Секрет нашего дизайна - это смесь воображения, опыта и профессионализма!</p>
+						</div>
+					</div>
+					<div class="features--item">
+						<div class="feature--icon">
+							<img src="images/icons/team.svg" alt="">
+						</div>
+						<div class="feature--description">
+							<h1>Профессиональная команда</h1>
+							<p>Мы гордимся нашей дружной и постоянно развивающейся командой!</p>
+						</div>
+					</div>
+					<div class="features--item">
+						<div class="feature--icon">
+							<img src="images/icons/prices.svg" alt="">
+						</div>
+						<div class="feature--description">
+							<h1>Разумные цены</h1>
+							<p>Мы производим мебель для удовлетворения потребностей всех людей и предлагаем ее по доступным и справедливым ценам</p>
+						</div>
+					</div>
+				</div>
+				<div class="about--column">
+					<img src="images/about-image.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="parallax">
+			<div class="parallax--inner">
+				<div class="achievment--item">
+					<span class="counter">10</span>
+					<p>Лет на рынке</p>
+				</div>
+				<div class="achievment--item">
+					<span class="counter">1678</span>
+					<p>Довольных клиентов</p>
+				</div>
+				<div class="achievment--item">
+					<span class="counter">10</span>
+					<p>Лет на рынке</p>
+				</div>
+				<div class="achievment--item">
+					<span class="counter">10</span>
+					<p>Лет на рынке</p>
+				</div>
+			</div>
+			<div class="parallax--overlay"></div>
+		</section>
+
+		<section class="section section--works">
+			<div class="section--header">
+				Наши работы
+			</div>
+			<div class="works--container">
+				<div class="works--inner">
+					<div class="works--wrapper">
+						<div class="work--item" data-folder="work-1" data-title="Work 1 Title">
+							<div class="work--title">Work 1</div>
+						</div>
+						<div class="work--item" data-folder="work-2" data-title="Work 2 Title">
+							<div class="work--title">Work 2</div>
+						</div>
+						<div class="work--item" data-folder="work-3" data-title="Work 3 Title">
+							<div class="work--title">Work 3</div>
+						</div>
+						<div class="work--item" data-folder="work-4" data-title="Work 4 Title">
+							<div class="work--title">Work 4</div>
+						</div>
+						<div class="work--item" data-folder="work-5" data-title="Work 5 Title">
+							<div class="work--title">Work 5</div>
+						</div>
+						<div class="work--item" data-folder="work-6" data-title="Work 6 Title">
+							<div class="work--title">Work 6</div>
+						</div>
+					</div>
+					<div class="work--description">
+						<div class="work--load">
+
+							<div class="description--top">
+							  <div class="works--back" id="worksBack">
+							    <img src="images/icons/left-arrow.svg" alt="">
+							  </div>
+							  <div class="project--title">
+									<h1 id="title"></h1>
+							  </div>
+							</div>
+
+							<div class="description--main">
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Vendor -->
+		<script src="js/vendor/jquery-3.3.1.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+		<script src="js/hero-slider.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/works.js"></script>
+	</body>
+</html>
