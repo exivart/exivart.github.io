@@ -1,6 +1,6 @@
 .section--video {
   width: 60%;
-  margin: 40px auto;
+  margin: 80px auto;
   text-align: center;
   position: relative;
 }
@@ -43,3 +43,21 @@
         opacity: 1;
       }
   }
+
+    @media screen and (max-width: 500px) {
+      .video--play {
+        width: 60px;
+        height: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+      }
+    }
+
+      @media screen and (max-width: 425px) {
+        .video--play {
+          width: 40px;
+          height: 40px;
+          top: calc(50% - 20px);
+          left: calc(50% - 20px);
+        }
+      }
