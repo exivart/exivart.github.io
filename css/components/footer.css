@@ -1,5 +1,168 @@
 footer {
   width: 100%;
-  height: 300px;
+  padding: 10px 0;
   background-color: #383838;
 }
+
+  .footer--contacts {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+    .contacts--column {
+      width: 300px;
+      height: 100%;
+    }
+
+      .column--title {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      .column--wrapper {
+        width: 100%;
+      }
+
+        .contact--item {
+          width: 100%;
+          padding: 5px 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+          .contact--icon {
+            width: 20px;
+            height: 20px;
+          }
+
+            .contact--icon img {
+              width: 100%;
+            }
+
+          .contact--title {
+            margin-left: 15px;
+          }
+
+            .contact--title p {
+              font-size: 18px;
+              color: #fff;
+            }
+
+            .contact--title span {
+              font-weight: bold;
+            }
+
+            .contact--title a {
+              color: #fff;
+              text-decoration: none;
+            }
+
+              .contact--title a:hover {
+                color: #ffe31e;
+              }
+
+          .subscribe--form {
+            width: 100%;
+          }
+
+            .subscribe--form fieldset {
+              width: 100%;
+              border: 1px solid #fff;
+              border-radius: 20px;
+            }
+
+              .subscribe--form fieldset:last-child {
+                width: 200px;
+
+                margin: 10px 0;
+              }
+
+                .subscribe--form fieldset:last-child:hover {
+                  border: 1px solid #ffe31e;
+                }
+
+            .subscribe--form input {
+              width: calc(100% - 20px);
+              padding: 10px;
+              font-size: 18px;
+              color: #fff;
+              border: none;
+              background: none;
+              outline: none;
+            }
+
+            .subscribe--form button {
+              width: 100%;
+              font-size: 20px;
+              padding: 5px;
+              border: none;
+              background: none;
+              outline: none;
+              color: #fff;
+              cursor: pointer;
+            }
+
+              .subscribe--form button:hover {
+                color: #ffe31e;
+              }
+
+        .instagram--wrapper {
+          width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+        }
+
+          .inst--item {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition: linear .2s;
+          }
+
+            .inst--item img {
+              width: 100%;
+            }
+
+            .inst--item:hover {
+              transform: scale(1.1);
+            }
+
+  .footer--line {
+    width: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+@media screen and (max-width: 1024px) {
+  .footer--contacts {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+    .contacts--column {
+      margin: 10px;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .footer--contacts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
