@@ -1,0 +1,45 @@
+.section--video {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+
+  .video--play {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    opacity: 0;
+    transition: linear .2s;
+  }
+
+    .video--play img {
+      width: 100%;
+    }
+
+  .section--video video {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+    .section--video video:hover {
+      cursor: pointer;
+    }
+
+@media screen and (max-width: 1024px) {
+  .section--video {
+    width: 80%;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .section--video {
+      width: 95%;
+    }
+
+      .video--play {
+        opacity: 1;
+      }
+  }
