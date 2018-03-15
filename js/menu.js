@@ -21,4 +21,9 @@ $('#submenu-trigger').click(function() {
   $('.menu--sublist').toggleClass('menu--sublist-show');
 });
 
+$('.scroll').click(function() {
+  $('#menu').css('left', '-100%');
+  $('.modal--overlay').fadeOut();
+});
+
 });

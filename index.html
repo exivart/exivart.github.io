@@ -27,14 +27,14 @@
 		<header>
 			<div class="header__wide">
 				<div class="block--logo">
-					<a href="#">Interiori</a>
+					<a href="/">Interiori</a>
 					<span>Качетсвенная мебель на заказ</span>
 				</div>
 				<div class="block--navigation">
 					<ul class="nav--list">
-						<li class="nav--item"><a href="#">Главная</a></li>
+						<li class="nav--item"><a href="/">Главная</a></li>
 						<li class="nav--item">
-							<a href="#">Каталог</a>
+							<a href="#catalog">Каталог</a>
 							<ul class="nav--sublist">
 								<li class="nav--subitem"><a href="#">Прихожая</a></li>
 								<li class="nav--subitem"><a href="#">Гостиная</a></li>
@@ -44,9 +44,9 @@
 								<li class="nav--subitem"><a href="#">Офис</a></li>
 							</ul>
 						</li>
-						<li class="nav--item"><a href="#">О нас</a></li>
-						<li class="nav--item"><a href="#">Работы</a></li>
-						<li class="nav--item"><a href="#">Контакты</a></li>
+						<li class="nav--item"><a href="#about">О нас</a></li>
+						<li class="nav--item"><a href="#works">Работы</a></li>
+						<li class="nav--item"><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="block--requestcall">
@@ -118,7 +118,7 @@
 				</div>
 				<div class="menu--wrapper">
 					<ul class="menu--list">
-						<li><a href="#">Главная</a> </li>
+						<li><a href="index.html">Главная</a> </li>
 						<li id="submenu-trigger">
 							<a>Каталог</a> <span class="submenu--direction"><img src="images/icons/down-arrow.svg" alt=""> </span>
 							<ul class="menu--sublist">
@@ -130,9 +130,9 @@
 								<li class=""><a href="#">Офис</a></li>
 							</ul>
 						</li>
-						<li><a href="#">О нас</a> </li>
-						<li><a href="#">Работы</a> </li>
-						<li><a href="#">Контакты</a> </li>
+						<li><a class="scroll" href="#about">О нас</a> </li>
+						<li><a class="scroll" href="#works">Работы</a> </li>
+						<li><a class="scroll" href="#contacts">Контакты</a> </li>
 					</ul>
 				</div>
 			</div>
@@ -164,7 +164,7 @@
 			</div>
 		</section>
 
-		<section class="section">
+		<section class="section" id="catalog">
 			<div class="section--header">
 				Наш каталог
 			</div>
@@ -293,7 +293,7 @@
 			</div>
 		</section>
 
-		<section class="section section--about">
+		<section class="section section--about" id="about">
 			<div class="section--header">
 				О Нас
 			</div>
@@ -370,7 +370,7 @@
 			<div class="parallax--overlay"></div>
 		</section>
 
-		<section class="section section--works">
+		<section class="section section--works" id="works">
 			<div class="section--header">
 				Наши работы
 			</div>
@@ -482,7 +482,7 @@
 		</section>
 
 		<footer>
-			<div class="footer--contacts">
+			<div class="footer--contacts" id="contacts">
 				<div class="contacts--column">
 					<div class="column--title">
 						Контакты
@@ -571,5 +571,6 @@
 		<script src="js/works.js"></script>
 		<script src="js/video-controls.js"></script>
 		<script src="js/feedback-form.js"></script>
+		<script src="js/smooth-scrolling.js"></script>
 	</body>
 </html>
