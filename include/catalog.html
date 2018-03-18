@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+		<base href="/">
+		<title>Interiori - Мебель на заказ</title>
+		<link rel="stylesheet" href="../css/vendor/reset.css">
+		<link rel="stylesheet" href="../css/vendor/fonts.css">
+		<link rel="stylesheet" href="../css/components/header.css">
+		<link rel="stylesheet" href="../css/components/modal.css">
+		<link rel="stylesheet" href="../css/components/menu.css">
+		<link rel="stylesheet" href="../css/components/loader.css">
+    <link rel="stylesheet" href="../css/pages/catalog-page.css">
+		<link rel="stylesheet" href="../css/components/footer.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="header__wide">
+				<div class="block--logo">
+					<a href="/">Interiori</a>
+					<span>Качетсвенная мебель на заказ</span>
+				</div>
+				<div class="block--navigation">
+					<ul class="nav--list">
+						<li class="nav--item"><a href="/">Главная</a></li>
+						<li class="nav--item">
+							<a href="">Каталог</a>
+							<ul class="nav--sublist">
+								<li class="nav--subitem"><a href="#">Прихожая</a></li>
+								<li class="nav--subitem"><a href="#">Гостиная</a></li>
+								<li class="nav--subitem"><a href="#">Детская</a></li>
+								<li class="nav--subitem"><a href="#">Спальня</a></li>
+								<li class="nav--subitem"><a href="#">Кухня</a></li>
+								<li class="nav--subitem"><a href="#">Офис</a></li>
+							</ul>
+						</li>
+						<li class="nav--item"><a href="/">О нас</a></li>
+						<li class="nav--item"><a href="/">Работы</a></li>
+						<li class="nav--item"><a href="/">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="block--requestcall">
+					<a class="modal-trigger">Заказать звонок</a>
+				</div>
+			</div>
+			<div class="header__mobile">
+				<div class="menu--trigger">
+					<div class="menu--icon">
+						<img src="images/icons/menu.svg">
+					</div>
+				</div>
+				<div class="block--requestcall">
+					<a class="modal-trigger">Заказать звонок</a>
+				</div>
+				<div class="requestcall--trigger">
+					<div class="phone--icon modal-trigger">
+						<img src="images/icons/phone.svg">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="modal--overlay"></section>
+
+		<div class="block--modal" id="requestcall-modal">
+			<div class="modal--title">
+				Заполните форму
+			</div>
+			<div class="modal--description">
+				И наши менеджеры с Вами свяжутся
+			</div>
+			<div class="modal--form">
+				<form class="form--requestcall" action="" method="post">
+					<fieldset>
+						<input class="modal--input" type="text" name="" value="" placeholder="Имя*" required>
+					</fieldset>
+					<fieldset>
+						<input class="modal--input" type="text" name="" value="" placeholder="Телефон*" required>
+					</fieldset>
+					<p>Время звонка:</p>
+					<fieldset>
+						<select class="modal--input" name="" required>
+							<option value="0" disabled selected>Выберите время..</option>
+							<option value="1">В течение часа</option>
+							<option value="2">В течение дня</option>
+							<option value="3">Указать в комментарии</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<textarea class="modal--input" name="name" placeholder="Комментарий"></textarea>
+					</fieldset>
+					<fieldset>
+						<button class="modal--submit" type="submit" name="button">Отправить</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+			<div class="menu--block" id="menu">
+				<div class="menu--top">
+					<div class="menu--title">
+						Interiori
+					</div>
+					<div class="menu--close">
+						<img src="images/icons/left-arrow.svg" alt="">
+					</div>
+				</div>
+				<div class="menu--wrapper">
+					<ul class="menu--list">
+						<li><a href="/">Главная</a> </li>
+						<li id="submenu-trigger">
+							<a>Каталог</a> <span class="submenu--direction"><img src="images/icons/down-arrow.svg" alt=""> </span>
+							<ul class="menu--sublist">
+								<li class=""><a href="#">Прихожая</a></li>
+								<li class=""><a href="#">Гостиная</a></li>
+								<li class=""><a href="#">Детская</a></li>
+								<li class=""><a href="#">Спальня</a></li>
+								<li class=""><a href="#">Кухня</a></li>
+								<li class=""><a href="#">Офис</a></li>
+							</ul>
+						</li>
+						<li><a class="scroll" href="/">О нас</a> </li>
+						<li><a class="scroll" href="/">Работы</a> </li>
+						<li><a class="scroll" href="/">Контакты</a> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu--block" id="catalog">
+				<div class="menu--top">
+					<div class="menu--title">
+						Каталог
+					</div>
+					<div class="menu--close">
+						<img src="images/icons/left-arrow.svg" alt="">
+					</div>
+				</div>
+				<div class="menu--wrapper">
+					<ul class="menu--list">
+						<li><a href="/catalog/prihojaya">Прихожая</a></li>
+						<li><a href="">Гостиная</a></li>
+						<li><a href="">Детская</a></li>
+						<li><a href="">Спальня</a></li>
+						<li><a href="">Кухня</a></li>
+						<li><a href="">Офис</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="category--trigger">
+				<img src="images/icons/category.svg" alt="">
+			</div>
+
+      <section class="catalog--page">
+				<div class="top--hierarchy">
+					<ul class="hierarchy--list">
+						<li><a href="/">Главная</a></li>
+						<li><a href="">Каталог</a></li>
+					</ul>
+				</div>
+        <div class="catalog--navigation__left">
+					<div class="category--title">
+						Каталог
+					</div>
+					<ul class="subcategory--list">
+						<li><a href="/catalog/prihojaya">Прихожая</a></li>
+						<li><a href="">Гостиная</a></li>
+						<li><a href="">Детская</a></li>
+						<li><a href="">Спальня</a></li>
+						<li><a href="">Кухня</a></li>
+						<li><a href="">Офис</a></li>
+					</ul>
+        </div>
+        <div class="main--wrapper">
+					<div class="category--title wrapper--title">
+            Рекомендованые товары
+          </div>
+
+					<div class="items--wrapper">
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+						<div class="wrap--item">
+
+						</div>
+					</div>
+
+        </div>
+      </section>
+
+
+
+		<footer>
+			<div class="footer--contacts" id="contacts">
+				<div class="contacts--column">
+					<div class="column--title">
+						Контакты
+					</div>
+					<div class="column--wrapper">
+						<div class="contact--item">
+							<div class="contact--icon">
+								<img src="images/icons/address-white.svg" alt="">
+							</div>
+							<div class="contact--title">
+								<p>Кабанбай-Батыра, 12</p>
+							</div>
+						</div>
+						<div class="contact--item">
+							<div class="contact--icon">
+								<img src="images/icons/phone-white.svg" alt="">
+							</div>
+							<div class="contact--title">
+								<p><a href="tel:87019955604">87019955604</a> </p>
+							</div>
+						</div>
+						<div class="contact--item">
+							<div class="contact--icon">
+								<img src="images/icons/mail-white.svg" alt="">
+							</div>
+							<div class="contact--title">
+								<p><a href="mailto:artem.dunk@yandex.ru">interiori-furniture@mail.kz</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contacts--column">
+					<div class="column--title">
+						Подпишитесь на новости
+					</div>
+					<div class="column--wrapper">
+						<form class="subscribe--form" action="" method="post">
+							<fieldset>
+								<input type="email" name="" value="" placeholder="E-mail:*" required>
+							</fieldset>
+							<fieldset>
+								<button type="submit" name="button">Подписаться</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="contacts--column">
+					<div class="column--title">
+						Instagram
+					</div>
+					<div class="instagram--wrapper">
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-1.jpg" alt=""> </a>
+						</div>
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-2.jpg" alt=""> </a>
+						</div>
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-3.jpg" alt=""> </a>
+						</div>
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-4.jpg" alt=""> </a>
+						</div>
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-5.jpg" alt=""> </a>
+						</div>
+						<div class="inst--item">
+							<a href="#"><img src="images/instagram/inst-6.jpg" alt=""> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer--line">
+				Interiori. Мебель высокого качества, 2018
+			</div>
+		</footer>
+
+		<!-- Vendor -->
+		<script src="../js/vendor/jquery-3.3.1.min.js"></script>
+		<script src="../js/modal.js"></script>
+		<script src="../js/menu.js"></script>
+    <script src="../js/catalog-navigation.js"></script>
+	</body>
+</html>
