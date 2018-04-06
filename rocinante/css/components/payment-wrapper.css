@@ -1,0 +1,18 @@
+.payment-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+  .paragraph-warn {
+    font-size: 20px;
+    font-style: italic;
+    color: #FF5300;
+  }
+
+  .bitcoin-logo {
+    text-align: center;
+  }
+
+    .bitcoin-logo img {
+      width: 200px;
+    }

@@ -1,0 +1,27 @@
+.faq-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+  .faq-wrapper p {
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 2em;
+  }
+
+    .faq-wrapper p span {
+      font-weight: bold;
+    }
+
+    .faq-wrapper p a {
+      color: #3AAACF;
+      font-weight: bold;
+    }
+
+.faq-footer {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  color: #FF5300;
+}
