@@ -1,0 +1,11 @@
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^store$ /store.html [L]
+RewriteRule ^shipping$ /shipping.html [L]
+RewriteRule ^faq$ /faq.html [L]
+RewriteRule ^anti-scam$ /antiscam.html [L]
+RewriteRule ^payment$ /payment.html [L]
+RewriteRule ^contacts$ /contacts.html [L]
