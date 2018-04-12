@@ -1,0 +1,89 @@
+.works--wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+  .work--item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+    .work--image {
+      width: 140px;
+    }
+
+      .work--image img {
+        width: 100%;
+      }
+
+    .work--arrow {
+      width: 44px;
+    }
+
+      .work--arrow img {
+        width: 100%;
+      }
+
+    .work--title {
+      font-size: 22px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    .work--description {
+      font-size: 18px;
+      font-family: "Roboto_thin";
+      color: #808080;
+    }
+
+.buybutton {
+  text-align: center;
+  margin-top: 100px;
+}
+
+  .buybutton a {
+    font-size: 22px;
+    color: #fff;
+    border: 2px solid #0088cc;
+    border-radius: 30px;
+    background-color: #0088cc;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+
+@media screen and (max-width: 1200px) {
+  .works--wrapper {
+    width: 90%;
+  }
+
+    .work--item {
+      width: 25%;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+    .works--wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+      .work--item {
+        width: 70%;
+      }
+
+      .work--arrow {
+        margin: 20px 0;
+      }
+
+        .work--arrow img {
+          transform: rotate(90deg);
+        }
+  }

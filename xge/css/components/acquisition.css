@@ -1,0 +1,48 @@
+.section--acquisition {
+  padding-bottom: 60px;
+  margin-top: 80px;
+  background-color: #f7f5ef;
+}
+
+  .acq--title {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Roboto_thin";
+    padding-bottom: 20px;
+  }
+
+  .acq--wrapper {
+    width: 560px;
+    margin: 0 auto;
+  }
+
+    .acq--item {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #d0cbbb;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
+      .acq__left, .acq__right {
+        font-size: 20px;
+      }
+
+      .acq__left {
+        font-weight: bold;
+      }
+
+@media screen and (max-width: 768px) {
+  .acq--wrapper {
+    width: 80%;
+  }
+}
+
+  @media screen and (max-width: 450px) {
+    .acq__left, .acq__right {
+      font-size: 18px;
+    }
+  }
