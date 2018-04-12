@@ -1,0 +1,136 @@
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+  .header--nav {
+    width: 40%;
+  }
+
+  .header--logo {
+    width: 20%;
+  }
+
+  .header--reg {
+    width: 30%;
+  }
+
+  .header--logo, .header--reg, .header--nav, .header--menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .header--logo img {
+      width: 160px;
+    }
+
+    .nav--item {
+      display: flex;
+      padding: 0 15px;
+    }
+
+      .nav--item a {
+        font-size: 18px;
+        color: #0088cc;
+        text-decoration: none;
+        transition: linear .2s;
+      }
+
+      .nav--item a:hover {
+        color: #32bbff;
+      }
+
+    .reg--item {
+      padding: 10px 30px;
+      border-radius: 30px;
+      border: 2px solid #0088cc;
+      margin: 0 5px;
+      transition: linear .2s;
+    }
+
+      .reg--item:last-child {
+        background-color: #0088cc;
+      }
+
+        .reg--item a {
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          transition: linear .2s;
+        }
+
+        .reg--item:first-child a {
+          color: #0088cc;
+          text-decoration: none;
+        }
+
+        .reg--item:last-child a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+
+          .reg--item:first-child:hover {
+            border: 2px solid #32bbff;
+          }
+
+            .reg--item:first-child:hover a {
+              color: #32bbff;
+            }
+
+          .reg--item:last-child:hover {
+            border: 2px solid #32bbff;
+            background-color: #32bbff;
+          }
+
+  .header--menu {
+    width: 40%;
+    display: none;
+  }
+
+    .header--menu img {
+      width: 28px;
+    }
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  header {
+    justify-content: space-between;
+  }
+
+    .header--nav, .header--reg {
+      display: none;
+    }
+
+    .header--logo, .header--menu {
+      width: 50%;
+      display: flex;
+    }
+
+    .header--logo {
+      justify-content: flex-start;
+      padding-left: 20px;
+    }
+
+    .header--menu {
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+      .header--logo img {
+        width: 125px;
+      }
+}

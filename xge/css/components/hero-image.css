@@ -1,0 +1,148 @@
+.section--hero-image {
+  width: 100%;
+  height: 618px;
+  margin-top: 75px;
+  position: relative;
+}
+
+  .hero--image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/hero-image.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero--overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgba(255, 255, 255, 0.7));
+  }
+
+  .hero--wrapper {
+    width: 760px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+  }
+
+    .hero--title {
+      width: 100%;
+    }
+
+      .hero--title h1 {
+        font-size: 55px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        line-height: 1.2em;
+        padding: 20px 0;
+      }
+
+      .hero--title p {
+        font-size: 24px;
+        padding: 20px 0;
+        font-weight: normal;
+        line-height: 1.3em;
+      }
+
+    .hero--link {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+      .link--item {
+        margin: 0 5px;
+        padding: 15px 50px;
+        border-radius: 30px;
+        border: 2px solid #0088cc;
+      }
+
+      .link--item:first-child {
+        background-color: #0088cc;
+      }
+
+        .link--item:first-child a {
+          color: #ffffff;
+        }
+
+        .link--item:last-child a {
+          color: #0088cc;
+        }
+
+        .link--item a {
+          font-size: 20px;
+          text-decoration: none;
+        }
+
+@media screen and (max-width: 1366px) {
+  .hero--wrapper {
+    left: 10%;
+  }
+}
+
+  @media screen and (max-width: 1024px) {
+    .hero--wrapper {
+      width: 100%;
+      top: 10%;
+      left: 0;
+      text-align: center;
+    }
+
+      .hero--link {
+        justify-content: center;
+      }
+  }
+
+    @media screen and (max-width: 650px) {
+      .section--hero-image{
+          height: calc(100vh - 75px);
+      }
+
+        .hero--title h1 {
+          padding: 20px 10px;
+          font-size: 40px;
+        }
+
+        .hero--title p {
+          padding: 20px 30px;
+          font-size: 20px;
+        }
+    }
+
+      @media screen and (max-width: 450px) {
+        .hero--wrapper {
+            top: 5%;
+        }
+
+          .hero--title h1 {
+            font-size: 25px;
+          }
+
+          .hero--title p {
+            font-size: 18px;
+            padding: 20px;
+          }
+
+          .hero--link {
+            width: 90%;
+            margin: 50px auto 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+            .link--item {
+              margin: 10px auto;
+            }
+      }

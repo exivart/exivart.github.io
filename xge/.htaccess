@@ -1,0 +1,8 @@
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^catalog$ /include/catalog.html [L]
+RewriteRule ^catalog/prihojaya$ /include/categories/prihojaya.html [L]
+RewriteRule ^catalog/gostinaya$ /include/categories/gostinaya.html [L]
