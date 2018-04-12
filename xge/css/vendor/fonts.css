@@ -2,3 +2,8 @@
   font-family: "Roboto";
   src: url("Roboto.ttf");
 }
+
+@font-face {
+  font-family: "Roboto-thin";
+  src: url("Roboto_thin.ttf");
+}
