@@ -1,0 +1,68 @@
+.section--roadmap {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f7fcff;
+}
+
+  .roadmap--wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+    .map--item {
+      width: 20%;
+    }
+
+      .map--number {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #ffffff;
+        border-radius: 50%;
+        background-color: #0088cc;
+        text-align: center;
+        padding: 10px;
+        margin: 20px 0;
+      }
+
+      .map--title {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 10px 0;
+        line-height: 1.5em;
+      }
+
+      .map--date {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+
+      .map--description {
+        font-size: 18px;
+        font-family: "Roboto_thin";
+        line-height: 1.5em;
+        color: #808080;
+      }
+
+@media screen and (max-width: 1200px) {
+  .roadmap--wrapper {
+    width: 90%;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .roadmap--wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+      .map--item {
+        width: 70%;
+        margin-top: 20px;
+      }
+  }
