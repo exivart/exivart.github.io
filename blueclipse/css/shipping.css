@@ -1,0 +1,29 @@
+.shp {
+    width: 100%;
+    padding: 40px 0;
+    color: #fff;
+}
+
+    .shp_pg {
+        padding: 10px;
+    }
+
+        .pg_ttl {
+            font-size: 20px;
+            padding: 5px 0;
+            color: #c0dffe;
+            font-family: 'Share Tech Mono', monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .shp_pg p {
+            font-size: 18px;
+            line-height: 1.2;
+            margin: 10px 0;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+            .shp_pg p a {
+                color: #c0dffe;
+            }

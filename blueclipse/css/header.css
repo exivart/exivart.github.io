@@ -1,0 +1,69 @@
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+    .mdl_hdr {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+        .nvlnk {
+            width: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            border-bottom: 1px solid transparent;
+            transition: linear .2s;
+        }
+
+            .actv {
+                border-bottom: 1px solid #c0dffe;
+            }
+
+            .nvlnk:hover {
+                border-bottom: 1px solid #fff;
+            }
+
+            .nvlnk a {
+                font-family: 'Share Tech Mono', monospace;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+        .lng {
+            position: relative;
+        }
+
+            .lng:hover .lng_bx {
+                display: flex;
+            }
+
+            .lng_bx {
+                width: 100px;
+                background-color: #000;
+                position: absolute;
+                top: 100%;
+                display: none;
+                flex-direction: column;
+                right: 0;
+            }
+
+                .lng_bx a {
+                    padding: 5px 0;
+                    font-size: 18px;
+                }
+
+                    .lng_bx a:hover {
+                        color: #c0dffe;
+                    }

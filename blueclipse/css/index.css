@@ -1,0 +1,67 @@
+.mbl {
+    width: 365px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .mbl_ttl {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        padding: 80px 0;
+        font-family: 'Share Tech Mono', monospace;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+
+    .mbl_lg {
+        width: 300px;
+        min-height: 300px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #c0dfff;
+    }
+
+        .mbl_lg_innr {
+            width: 298px;
+            height: 298px;
+            position: absolute;
+            bottom: -1px;
+            left: -1px;
+            background-color: #000;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+    .mbl_lnk {
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    .mbl_entr {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+        .mbl_entr a {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            cursor: pointer;
+            font-weight: bold;
+            transition: linear .5s;
+            text-decoration: none;
+        }
+
+        .mbl_entr a:hover {
+            color: #c0dfff;
+        }
