@@ -1,0 +1,14 @@
+.gal {
+    width: 100%;
+    color: #fff;
+    padding: 40px 0;
+}
+
+    .gal_pg {
+        padding: 10px;
+    }
+
+        .pg_img {
+            width: 100%;
+            padding: 10px 0;
+        }
