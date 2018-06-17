@@ -4,6 +4,16 @@
     color: #fff;
 }
 
+    .str_dscnt {
+        padding: 10px;
+    }
+
+        .str_dscnt p {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 18px;
+            color: #fff!important;
+        }
+
     .str p {
         /* padding: 10px; */
         line-height: 1.5;
@@ -11,6 +21,12 @@
         font-family: 'Share Tech Mono', monospace;
         font-size: 18px;
         color: #c0dffe;
+    }
+
+    .str p a {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 18px;
+        color: #fff;
     }
 
     .str_row {
@@ -41,6 +57,12 @@
             padding: 5px 0;
             font-family: 'Share Tech Mono', monospace;
         }
+
+            .row_itm sup {
+                font-size: 16px;
+                vertical-align: top;
+                padding-left: 4px;
+            }
 
         .lst {
             border-bottom: 1px solid #fff;

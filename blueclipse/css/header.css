@@ -41,7 +41,7 @@ header {
                 cursor: pointer;
             }
 
-        .lng {
+        /* .lng {
             position: relative;
         }
 
@@ -66,4 +66,4 @@ header {
 
                     .lng_bx a:hover {
                         color: #c0dffe;
-                    }
+                    } */
