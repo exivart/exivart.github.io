@@ -19,6 +19,6 @@
                 font-family: 'Share Tech Mono', monospace;
             }
 
-            .pg_img img {
-                width: 600px;
+            .pg_img a img {
+                max-width: 600px;
             }
