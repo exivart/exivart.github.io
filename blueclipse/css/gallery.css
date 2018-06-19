@@ -12,3 +12,13 @@
             width: 100%;
             padding: 10px 0;
         }
+
+            .pg_img p {
+                margin: 10px 0;
+                font-size: 16px;
+                font-family: 'Share Tech Mono', monospace;
+            }
+
+            .pg_img img {
+                width: 600px;
+            }
